@@ -1,249 +1,254 @@
 <!doctype html>
+
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
 <![endif]-->
+
 <!--[if IE 7]>
 <html class="no-js lt-ie9 lt-ie8" lang="en">
 <![endif]-->
+
 <!--[if IE 8]>
 <html class="no-js lt-ie9" lang="en">
 <![endif]-->
+
 <!--[if gt IE 8]>
 <!-->
+
 <html class="no-js" lang="en">
 <!--<![endif]-->
 
 <head>
 
-    <meta charset="utf-8">
+<meta charset="utf-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1"
-    >
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+>
 
-    <meta
-        name="description"
-        content="Syeda Mehak Nahlain Fatima - Video Editor specializing in YouTube videos, Shorts, Reels, social media content and AI-assisted video editing."
-    >
+<meta
+    name="description"
+    content="Amina Yaseen - Content Creator & Digital Marketer | Physics Undergraduate specializing in creative writing, graphic design, digital marketing, public speaking, UI/UX and Webflow basics."
+>
 
-    <meta
-        name="author"
-        content="Syeda Mehak Nahlain Fatima"
-    >
+<meta
+    name="author"
+    content="Amina Yaseen"
+>
 
-    <title>Syeda Mehak Nahlain Fatima | Video Editor</title>
+<title>Amina Yaseen | Content Creator & Digital Marketer</title>
 
-    <link
-        rel="shortcut icon"
-        type="image/x-icon"
-        href="img/favicon.ico"
-    >
+<link
+    rel="shortcut icon"
+    type="image/x-icon"
+    href="img/favicon.ico"
+>
 
-    <!-- Themify Icons CSS -->
-    <link
-        rel="stylesheet"
-        href="css/themify-icons.css"
-    >
+<!-- Themify Icons CSS -->
+<link
+    rel="stylesheet"
+    href="css/themify-icons.css"
+>
 
-    <!-- Elegant Line Icons CSS -->
-    <link
-        rel="stylesheet"
-        href="css/elegant-line-icons.css"
-    >
+<!-- Elegant Line Icons CSS -->
+<link
+    rel="stylesheet"
+    href="css/elegant-line-icons.css"
+>
 
-    <!-- Bootstrap CSS -->
-    <link
-        rel="stylesheet"
-        href="css/bootstrap.min.css"
-    >
+<!-- Bootstrap CSS -->
+<link
+    rel="stylesheet"
+    href="css/bootstrap.min.css"
+>
 
-    <!-- Slicknav CSS -->
-    <link
-        rel="stylesheet"
-        href="css/slicknav.min.css"
-    >
+<!-- Slicknav CSS -->
+<link
+    rel="stylesheet"
+    href="css/slicknav.min.css"
+>
 
-    <!-- Animate CSS -->
-    <link
-        rel="stylesheet"
-        href="css/animate.min.css"
-    >
+<!-- Animate CSS -->
+<link
+    rel="stylesheet"
+    href="css/animate.min.css"
+>
 
-    <!-- OWL Carousel CSS -->
-    <link
-        rel="stylesheet"
-        href="css/owl.carousel.css"
-    >
+<!-- OWL Carousel CSS -->
+<link
+    rel="stylesheet"
+    href="css/owl.carousel.css"
+>
 
-    <!-- Venobox CSS -->
-    <link
-        rel="stylesheet"
-        href="css/venobox.css"
-    >
+<!-- Venobox CSS -->
+<link
+    rel="stylesheet"
+    href="css/venobox.css"
+>
 
-    <!-- Main CSS -->
-    <link
-        rel="stylesheet"
-        href="css/main.css"
-    >
+<!-- Main CSS -->
+<link
+    rel="stylesheet"
+    href="css/main.css"
+>
 
-    <style>
+<style>
 
-        /*
-        ============================================================
-        EXISTING UI PRESERVED
-        Only portfolio title/button styling added.
-        ============================================================
-        */
+    /*
+    ============================================================
+    EXISTING UI PRESERVED
+    Only portfolio title/button styling added.
+    ============================================================
+    */
 
-        /* HERO — same design, only scaled so the content fits cleanly */
+    /* HERO — same design, only scaled so the content fits cleanly */
+    .hero-section {
+        min-height: 620px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    .hero-content .heading {
+        font-size: 50px !important;
+        line-height: 1.06 !important;
+        margin-bottom: 22px !important;
+    }
+
+    .hero-content .sub-heading {
+        font-size: 21px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 14px !important;
+    }
+
+    .hero-content .desc {
+        max-width: 690px;
+        font-size: 15px !important;
+        line-height: 1.75 !important;
+        margin-bottom: 28px !important;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .navbar-brand:hover {
+        text-decoration: none;
+    }
+
+    /* Portfolio hover: title + button appear on the image */
+    .work-thumb {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .work-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.52);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .work-overlay .work-title {
+        display: block;
+        margin: 0;
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 1.35;
+        font-weight: 700;
+        transform: translateY(15px);
+        transition: all 0.3s ease;
+    }
+
+    .work-overlay .work-view-btn {
+        display: inline-block;
+        padding: 7px 16px;
+        background: #ffffff;
+        color: #111111;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.2;
+        border: 0;
+        border-radius: 4px;
+        text-decoration: none;
+        transform: translateY(15px);
+        transition: all 0.3s ease;
+    }
+
+    .work-overlay .work-view-btn:hover {
+        background: #f2f2f2;
+        color: #111111;
+        text-decoration: none;
+    }
+
+    .work-box:hover .work-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .work-box:hover .work-overlay .work-title,
+    .work-box:hover .work-overlay .work-view-btn {
+        transform: translateY(0);
+    }
+
+    /* Remove the old title/button area below each image */
+    .work-info {
+        display: none !important;
+    }
+
+    .work-box img {
+        width: 100%;
+        display: block;
+    }
+
+    @media (max-width: 991px) {
+        .hero-content .heading {
+            font-size: 44px !important;
+        }
+    }
+
+    @media (max-width: 575px) {
         .hero-section {
             min-height: 620px;
-            padding-top: 70px;
-            padding-bottom: 70px;
-        }
-
-        .hero-content {
-            max-width: 650px;
-        }
-
-        .hero-content .heading {
-            font-size: 50px !important;
-            line-height: 1.06 !important;
-            margin-bottom: 22px !important;
         }
 
         .hero-content .sub-heading {
-            font-size: 21px !important;
-            line-height: 1.2 !important;
-            margin-bottom: 14px !important;
+            font-size: 20px !important;
+        }
+
+        .hero-content .heading {
+            font-size: 40px !important;
+            line-height: 1.08 !important;
         }
 
         .hero-content .desc {
-            max-width: 690px;
             font-size: 15px !important;
-            line-height: 1.75 !important;
-            margin-bottom: 28px !important;
+            line-height: 1.7 !important;
         }
+    }
 
-        .navbar-brand {
-            font-size: 25px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
+</style>
 
-        .navbar-brand:hover {
-            text-decoration: none;
-        }
-
-        /* Portfolio hover: title + button appear on the image */
-        .work-thumb {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .work-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 20px;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.52);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .work-overlay .work-title {
-            display: block;
-            margin: 0;
-            color: #ffffff;
-            font-size: 18px;
-            line-height: 1.35;
-            font-weight: 700;
-            transform: translateY(15px);
-            transition: all 0.3s ease;
-        }
-
-        .work-overlay .work-view-btn {
-            display: inline-block;
-            padding: 7px 16px;
-            background: #ffffff;
-            color: #111111;
-            font-size: 12px;
-            font-weight: 600;
-            line-height: 1.2;
-            border: 0;
-            border-radius: 4px;
-            text-decoration: none;
-            transform: translateY(15px);
-            transition: all 0.3s ease;
-        }
-
-        .work-overlay .work-view-btn:hover {
-            background: #f2f2f2;
-            color: #111111;
-            text-decoration: none;
-        }
-
-        .work-box:hover .work-overlay {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .work-box:hover .work-overlay .work-title,
-        .work-box:hover .work-overlay .work-view-btn {
-            transform: translateY(0);
-        }
-
-        /* Remove the old title/button area below each image */
-        .work-info {
-            display: none !important;
-        }
-
-        .work-box img {
-            width: 100%;
-            display: block;
-        }
-
-        @media (max-width: 991px) {
-            .hero-content .heading {
-                font-size: 44px !important;
-            }
-        }
-
-        @media (max-width: 575px) {
-            .hero-section {
-                min-height: 620px;
-            }
-
-            .hero-content .sub-heading {
-                font-size: 20px !important;
-            }
-
-            .hero-content .heading {
-                font-size: 40px !important;
-                line-height: 1.08 !important;
-            }
-
-            .hero-content .desc {
-                font-size: 15px !important;
-                line-height: 1.7 !important;
-            }
-        }
-
-    </style>
 
 </head>
-
 
 <body
     data-spy="scroll"
@@ -251,449 +256,466 @@
     data-offset="70"
 >
 
+<!-- PRELOADER -->
 
-    <!-- PRELOADER -->
+<div class="site-preloader-wrap">
 
-    <div class="site-preloader-wrap">
+    <div class="spinner-wrap">
 
-        <div class="spinner-wrap">
+        <div class="spinner"></div>
 
-            <div class="spinner"></div>
+    </div>
+
+</div>
+
+
+<!-- HEADER -->
+
+<header
+    id="header"
+    class="header-section"
+>
+
+    <div class="container">
+
+        <nav class="navbar">
+
+            <a
+                href="#home"
+                class="navbar-brand"
+            >
+                <img
+                    src="img/logo.png"
+                    alt="Amina Yaseen"
+                >
+            </a>
+
+
+            <div class="d-flex menu-wrap">
+
+                <div
+                    id="navmenu"
+                    class="mainmenu"
+                >
+
+                    <ul class="nav">
+
+                        <li>
+                            <a
+                                data-scroll
+                                class="nav-link active"
+                                href="#home"
+                            >
+                                Home
+                                <span class="sr-only">
+                                    (current)
+                                </span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a
+                                data-scroll
+                                class="nav-link"
+                                href="#about"
+                            >
+                                About
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a
+                                data-scroll
+                                class="nav-link"
+                                href="#services"
+                            >
+                                Services
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a
+                                data-scroll
+                                class="nav-link"
+                                href="#portfolio"
+                            >
+                                Portfolio
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a
+                                data-scroll
+                                class="nav-link"
+                                href="#reviews"
+                            >
+                                Experience
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a
+                                data-scroll
+                                class="nav-link"
+                                href="#contact"
+                            >
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- END HEADER -->
+
+
+<!-- HERO -->
+
+<section
+    id="home"
+    class="hero-section d-flex align-items-center"
+>
+
+    <div class="container">
+
+        <div class="row hero-wrap">
+
+            <div class="col-lg-7">
+
+                <div class="hero-content mt-50">
+
+                    <h3
+                        class="sub-heading wow fadeInUp"
+                        data-wow-delay="200ms"
+                    >
+                        Hey, I am Amina Yaseen...
+                    </h3>
+
+                    <h1
+                        class="heading wow fadeInUp"
+                        data-wow-delay="300ms"
+                    >
+                        CONTENT CREATOR | DIGITAL MARKETER | PHYSICS UNDERGRADUATE
+                    </h1>
+
+                    <p
+                        class="desc wow fadeInUp"
+                        data-wow-delay="400ms"
+                    >
+                        I am Amina Yaseen, a motivated and versatile Physics undergraduate with hands-on experience in digital marketing, graphic design, and content creation. I combine analytical problem-solving with creative writing, public speaking, and digital skills to create impactful content and digital experiences.
+                    </p>
+
+                    <a
+                        href="img/Amina-Yaseen.pdf"
+                        class="default-btn wow fadeInUp"
+                        data-wow-delay="600ms"
+                        download
+                    >
+                        Download CV
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- END HERO -->
+
+
+<!-- ABOUT -->
+
+<section
+    id="about"
+    class="about-section bd-bottom padding"
+>
+
+    <div class="container">
+
+        <div class="row about-wrap d-flex align-items-center">
+
+            <div class="col-lg-5 sm-padding">
+
+                <div
+                    class="about-bg wow fadeInLeft"
+                    data-wow-delay="100ms"
+                >
+
+                    <img
+                        src="/img/about.jpeg"
+                        alt="Amina Yaseen"
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-7 sm-padding">
+
+                <div class="about-content">
+
+                    <h2>
+
+                        <span
+                            class="wow fadeInUp"
+                            data-wow-delay="100ms"
+                        >
+                            I'm a Creative Content Creator & Digital Marketer.
+                        </span>
+
+                        <br>
+
+                        <!-- <span
+                            class="wow fadeInUp"
+                            data-wow-delay="300ms"
+                        >
+                            & Physics Undergraduate.
+                        </span> -->
+
+                    </h2>
+
+                    <p
+                        class="wow fadeInUp"
+                        data-wow-delay="500ms"
+                    >
+                        I'm Amina Yaseen, a Physics undergraduate with hands-on experience in digital marketing, graphic design, and content creation.
+                    </p>
+
+                    <p
+                        class="wow fadeInUp"
+                        data-wow-delay="600ms"
+                    >
+                        I am also experienced in creative writing, public speaking, communication, and developing engaging digital content using tools such as Canva.
+                    </p>
+
+                    <p
+                        class="wow fadeInUp"
+                        data-wow-delay="700ms"
+                    >
+                        My analytical background in Physics allows me to combine critical thinking and problem-solving with creative vision to deliver meaningful and engaging digital experiences.
+                    </p>
+
+                </div>
+
+                <ul
+                    class="skill-items wow fadeInUp"
+                    data-wow-delay="800ms"
+                >
+
+                    <li class="skill-item">
+                        <h5>Creative Writing</h5>
+                        <div class="progress">
+                            <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 90%;">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="skill-item">
+                        <h5>Graphic Design (Canva)</h5>
+                        <div class="progress">
+                            <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 85%;">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="skill-item">
+                        <h5>Digital Marketing</h5>
+                        <div class="progress">
+                            <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 85%;">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="skill-item">
+                        <h5>UI/UX & Webflow Basics</h5>
+                        <div class="progress">
+                            <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 75%;">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="skill-item">
+                        <h5>Public Speaking & Communication</h5>
+                        <div class="progress">
+                            <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 90%;">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="skill-item">
+                        <h5>Time Management & Leadership</h5>
+                        <div class="progress">
+                            <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 85%;">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="skill-item">
+                        <h5>Critical Thinking</h5>
+                        <div class="progress">
+                            <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 90%;">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="cv-btn">
+
+                    <a
+                        href="mailto:aminayaseenaminayasæn128@gmail.com"
+                        class="default-btn wow fadeInUp"
+                        data-wow-delay="900ms"
+                    >
+                        Get In Touch
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- END ABOUT -->
+
+
+<!-- SERVICES -->
+
+<section
+    id="services"
+    class="service-section bg-grey bd-bottom padding"
+>
+
+    <div class="container">
+
+        <div class="section-heading text-center mb-40">
+
+            <h2 class="wow fadeInUp">
+                Professional Services
+            </h2>
+
+        </div>
+
+        <div class="service-wrap row">
+
+            <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="100ms">
+                <div class="service-item text-center">
+                    <i class="icon-edit"></i>
+                    <h3><span>Content Creation</span></h3>
+                    <p>Creative and engaging written content developed with a strong focus on audience engagement and effective communication.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
+                <div class="service-item text-center">
+                    <i class="icon-pencil"></i>
+                    <h3><span>Creative Writing</span></h3>
+                    <p>Creative writing and storytelling designed to communicate ideas clearly while connecting with the target audience.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="500ms">
+                <div class="service-item text-center">
+                    <i class="icon-layers"></i>
+                    <h3><span>Graphic Design</span></h3>
+                    <p>Creative visual content and promotional assets designed using Canva and aligned with brand communication needs.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="700ms">
+                <div class="service-item text-center">
+                    <i class="icon-laptop"></i>
+                    <h3><span>Digital Marketing</span></h3>
+                    <p>Digital marketing support including social media content, research, audience engagement and promotional communication.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- END SERVICES -->
+
+
+<!-- COUNTERS -->
+
+<section class="counter-section padding overlay">
+
+    <div class="container">
+
+        <div class="counter-wrap row">
+
+            <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="100ms">
+                <div class="counter-item text-center">
+                    <i class="icon-book-open"></i>
+                    <h3 class="counter">2</h3>
+                    <h4>Academic Qualifications</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
+                <div class="counter-item text-center">
+                    <i class="icon-pencil"></i>
+                    <h3 class="counter">7</h3>
+                    <h4>Core Skills</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="500ms">
+                <div class="counter-item text-center">
+                    <i class="icon-globe"></i>
+                    <h3 class="counter">2</h3>
+                    <h4>Professional Experiences</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="700ms">
+                <div class="counter-item text-center">
+                    <i class="icon-laptop"></i>
+                    <h3 class="counter">1.5</h3>
+                    <h4>Years Freelance Experience</h4>
+                </div>
+            </div>
 
         </div>
 
     </div>
 
+</section>
 
-    <!-- HEADER -->
+<!-- END COUNTERS -->
 
-    <header
-        id="header"
-        class="header-section"
-    >
-
-        <div class="container">
-
-            <nav class="navbar">
-
-                <a
-                    href="#home"
-                    class="navbar-brand"
-                >
-                    <img
-                        src="img/logo.png"
-                        alt="Syeda Mehak Nahlain Fatima"
-                    >
-                </a>
-
-
-                <div class="d-flex menu-wrap">
-
-                    <div
-                        id="navmenu"
-                        class="mainmenu"
-                    >
-
-                        <ul class="nav">
-
-                            <li>
-                                <a
-                                    data-scroll
-                                    class="nav-link active"
-                                    href="#home"
-                                >
-                                    Home
-                                    <span class="sr-only">
-                                        (current)
-                                    </span>
-                                </a>
-                            </li>
-
-
-                            <li>
-                                <a
-                                    data-scroll
-                                    class="nav-link"
-                                    href="#about"
-                                >
-                                    About
-                                </a>
-                            </li>
-
-
-                            <li>
-                                <a
-                                    data-scroll
-                                    class="nav-link"
-                                    href="#services"
-                                >
-                                    Services
-                                </a>
-                            </li>
-
-
-                            <li>
-                                <a
-                                    data-scroll
-                                    class="nav-link"
-                                    href="#portfolio"
-                                >
-                                    Portfolio
-                                </a>
-                            </li>
-
-
-                            <li>
-                                <a
-                                    data-scroll
-                                    class="nav-link"
-                                    href="#reviews"
-                                >
-                                    Experience
-                                </a>
-                            </li>
-
-
-                            <li>
-                                <a
-                                    data-scroll
-                                    class="nav-link"
-                                    href="#contact"
-                                >
-                                    Contact
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </nav>
-
-        </div>
-
-    </header>
-
-    <!-- END HEADER -->
-
-
-    <!-- HERO -->
-
-    <section
-        id="home"
-        class="hero-section d-flex align-items-center"
-    >
-
-        <div class="container">
-
-            <div class="row hero-wrap">
-
-                <div class="col-lg-7">
-
-                    <div class="hero-content mt-50">
-
-                        <h3
-                            class="sub-heading wow fadeInUp"
-                            data-wow-delay="200ms"
-                        >
-                            Hey,  I am Syeda Mehak...
-                        </h3>
-
-                        <h1
-                            class="heading wow fadeInUp"
-                            data-wow-delay="300ms"
-                        >
-                            VIDEO EDITOR | SHORT-FORM CONTENT CREATOR
-                        </h1>
-
-                        <p
-                            class="desc wow fadeInUp"
-                            data-wow-delay="400ms"
-                        >
-                            I am Mehak, a passionate Video Editor specializing in YouTube videos, Shorts, Reels, and social media content. I create engaging, high-quality edits with smooth transitions, subtitles, sound effects, color correction, and HD exports.
-                        </p>
-
-                        <a
-                            href="img/Syeda_Mehak.pdf"
-                            class="default-btn wow fadeInUp"
-                            data-wow-delay="600ms"
-                            download
-                        >
-                            Download CV
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- END HERO -->
-
-
-    <!-- ABOUT -->
-
-    <section
-        id="about"
-        class="about-section bd-bottom padding"
-    >
-
-        <div class="container">
-
-            <div class="row about-wrap d-flex align-items-center">
-
-                <div class="col-lg-5 sm-padding">
-
-                    <div
-                        class="about-bg wow fadeInLeft"
-                        data-wow-delay="100ms"
-                    >
-
-                        <img
-                            src="/img/about.jpeg"
-                            alt="Syeda Mehak Nahlain Fatima"
-                        >
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-7 sm-padding">
-
-                    <div class="about-content">
-
-                        <h2>
-
-                            <span
-                                class="wow fadeInUp"
-                                data-wow-delay="100ms"
-                            >
-                                I'm a Passionate Video Editor & Content Creator.
-                            </span>
-
-                            <br>
-
-                            <!-- <span
-                                class="wow fadeInUp"
-                                data-wow-delay="300ms"
-                            >
-                                & Video Editor.
-                            </span> -->
-
-                        </h2>
-
-                        <p
-                            class="wow fadeInUp"
-                            data-wow-delay="500ms"
-                        >
-                            I'm Mehak, a passionate Video Editor specializing in YouTube videos, Shorts, Reels, and social media content.
-                        </p>
-
-                        <p
-                            class="wow fadeInUp"
-                            data-wow-delay="600ms"
-                        >
-                            I create engaging, high-quality edits with smooth transitions, subtitles, sound effects, color correction, and HD exports.</p>
-
-                        <p
-                            class="wow fadeInUp"
-                            data-wow-delay="700ms"
-                        >
-                            My goal is to make content more professional, entertaining, and audience-friendly through clean and creative editing.</p>
-
-                    </div>
-
-                    <ul
-                        class="skill-items wow fadeInUp"
-                        data-wow-delay="800ms"
-                    >
-
-                        <li class="skill-item">
-                            <h5>YouTube Video Editing</h5>
-                            <div class="progress"><div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 90%;"><span>90%</span></div></div>
-                        </li>
-
-                        <li class="skill-item">
-                            <h5>Shorts & Reels Editing</h5>
-                            <div class="progress"><div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 90%;"><span>90%</span></div></div>
-                        </li>
-
-                        <li class="skill-item">
-                            <h5>Talking Head Videos</h5>
-                            <div class="progress"><div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 85%;"><span>85%</span></div></div>
-                        </li>
-
-                        <li class="skill-item">
-                            <h5>Social Media Content Editing</h5>
-                            <div class="progress"><div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 90%;"><span>90%</span></div></div>
-                        </li>
-
-                        <li class="skill-item">
-                            <h5>AI-Assisted Video Editing</h5>
-                            <div class="progress"><div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 85%;"><span>85%</span></div></div>
-                        </li>
-
-                        <li class="skill-item">
-                            <h5>Subtitle & Caption Editing</h5>
-                            <div class="progress"><div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 90%;"><span>90%</span></div></div>
-                        </li>
-
-                        <li class="skill-item">
-                            <h5>Color Correction & Basic Motion Effects</h5>
-                            <div class="progress"><div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 85%;"><span>85%</span></div></div>
-                        </li>
-
-                        <li class="skill-item">
-                            <h5>MS Word & Excel</h5>
-                            <div class="progress"><div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 85%;"><span>85%</span></div></div>
-                        </li>
-
-                        <li class="skill-item">
-                            <h5>Data Entry & Record Management</h5>
-                            <div class="progress"><div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 90%;"><span>90%</span></div></div>
-                        </li>
-
-                        <li class="skill-item">
-                            <h5>Internet Browsing & Email Handling</h5>
-                            <div class="progress"><div class="progress-bar wow slideInLeft" data-wow-duration="2000ms" role="progressbar" style="width: 90%;"><span>90%</span></div></div>
-                        </li>
-
-                    </ul>
-
-                    <div class="cv-btn">
-
-                        <a
-                            href="mailto:mekiimehak776@gmail.com"
-                            class="default-btn wow fadeInUp"
-                            data-wow-delay="900ms"
-                        >
-                            Get In Touch
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- END ABOUT -->
-
-
-    <!-- SERVICES -->
-
-    <section
-        id="services"
-        class="service-section bg-grey bd-bottom padding"
-    >
-
-        <div class="container">
-
-            <div class="section-heading text-center mb-40">
-
-                <h2 class="wow fadeInUp">
-                    Professional Services
-                </h2>
-
-            </div>
-
-            <div class="service-wrap row">
-
-                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="100ms">
-                    <div class="service-item text-center">
-                        <i class="icon-video"></i>
-                        <h3><span>YouTube Video Editing</span></h3>
-                        <p>Engaging YouTube video editing with clean cuts, smooth transitions, subtitles, sound effects and HD exports.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
-                    <div class="service-item text-center">
-                        <i class="icon-video"></i>
-                        <h3><span>Shorts & Reels Editing</span></h3>
-                        <p>Creative short-form edits for YouTube Shorts, Instagram Reels and other social media platforms.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="500ms">
-                    <div class="service-item text-center">
-                        <i class="icon-edit"></i>
-                        <h3><span>Captions & Social Content</span></h3>
-                        <p>Subtitle and caption editing for talking-head videos, social media content and audience-friendly storytelling.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="700ms">
-                    <div class="service-item text-center">
-                        <i class="icon-laptop"></i>
-                        <h3><span>AI-Assisted Video Editing</span></h3>
-                        <p>AI-assisted editing for creative video projects, supported by color correction and basic motion effects.</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <!-- END SERVICES -->
-
-
-    <!-- COUNTERS -->
-
-    <section class="counter-section padding overlay">
-
-        <div class="container">
-
-            <div class="counter-wrap row">
-
-                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="100ms">
-                    <div class="counter-item text-center">
-                        <i class="icon-book-open"></i>
-                        <h3 class="counter">2</h3>
-                        <h4>Academic Qualifications</h4>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
-                    <div class="counter-item text-center">
-                        <i class="icon-pencil"></i>
-                        <h3 class="counter">10</h3>
-                        <h4>Core Skills</h4>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="500ms">
-                    <div class="counter-item text-center">
-                        <i class="icon-globe"></i>
-                        <h3 class="counter">6</h3>
-                        <h4>Video Projects</h4>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="700ms">
-                    <div class="counter-item text-center">
-                        <i class="icon-laptop"></i>
-                        <h3 class="counter">3</h3>
-                        <h4>AI Video Projects</h4>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- END COUNTERS -->
 
 <!-- PORTFOLIO -->
+
 <section
     id="portfolio"
     class="work-section bd-bottom padding"
@@ -703,7 +725,7 @@
 
         <div class="section-heading text-center mb-40">
             <h2 class="wow fadeInUp" data-wow-delay="100ms">
-                Video Editing Portfolio
+                Creative Portfolio
             </h2>
         </div>
 
@@ -713,28 +735,28 @@
 
             <ul class="work-filter mb-30 wow fadeInUp" data-wow-delay="300ms">
                 <li class="active" data-filter="*">All</li>
-                <li data-filter=".video">Video Editing</li>
-                <li data-filter=".shorts">Shorts & Reels</li>
-                <li data-filter=".ai">AI Generated</li>
+                <li data-filter=".content">Content Creation</li>
+                <li data-filter=".design">Graphic Design</li>
+                <li data-filter=".marketing">Digital Marketing</li>
             </ul>
 
             <div class="row work-items wow fadeInUp" data-wow-delay="500ms">
 
                 <!-- PROJECT 1 -->
-                <div class="col-md-4 col-sm-6 xs-padding single-item video">
+                <div class="col-md-4 col-sm-6 xs-padding single-item content">
                     <a
-                        href="https://drive.google.com/file/d/1RMcen4qjH20YsA-uAhsNu-yaMfINua1b/view?usp=drivesdk"
+                        href="https://www.instagram.com/aminayaseen_virtualartist?stkn=MWI2b3FwcmI1bmdxZw%3D%3D"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="work-box"
                     >
                         <div class="work-thumb">
                             <img
-                                src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=900&q=85"
-                                alt="Mehak Video Editing Project 1"
+                                src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=85"
+                                alt="Amina Yaseen Creative Writing"
                             >
                             <div class="work-overlay">
-                                <h4 class="work-title">Video Editing Project 1</h4>
+                                <h4 class="work-title">Creative Writing</h4>
                                 <span class="work-view-btn">View</span>
                             </div>
                         </div>
@@ -742,20 +764,20 @@
                 </div>
 
                 <!-- PROJECT 2 -->
-                <div class="col-md-4 col-sm-6 xs-padding single-item video">
+                <div class="col-md-4 col-sm-6 xs-padding single-item design">
                     <a
-                        href="https://drive.google.com/file/d/1ug_1u2-wgK0HWKpgfPIzK_LS0TaJumb1/view?usp=drivesdk"
+                        href="https://www.instagram.com/aminayaseen_virtualartist?stkn=MWI2b3FwcmI1bmdxZw%3D%3D"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="work-box"
                     >
                         <div class="work-thumb">
                             <img
-                                src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=900&q=85"
-                                alt="Mehak Video Editing Project 2"
+                                src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=85"
+                                alt="Amina Yaseen Graphic Design"
                             >
                             <div class="work-overlay">
-                                <h4 class="work-title">Video Editing Project 2</h4>
+                                <h4 class="work-title">Graphic Design</h4>
                                 <span class="work-view-btn">View</span>
                             </div>
                         </div>
@@ -763,20 +785,20 @@
                 </div>
 
                 <!-- PROJECT 3 -->
-                <div class="col-md-4 col-sm-6 xs-padding single-item video shorts">
+                <div class="col-md-4 col-sm-6 xs-padding single-item marketing">
                     <a
-                        href="https://drive.google.com/file/d/11Vzk1dOA0i4yDeciXQWcDMenjqcPoibP/view?usp=drivesdk"
+                        href="https://www.instagram.com/aminayaseen_virtualartist?stkn=MWI2b3FwcmI1bmdxZw%3D%3D"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="work-box"
                     >
                         <div class="work-thumb">
                             <img
-                                src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=900&q=85"
-                                alt="Mehak Short Form Video Project 3"
+                                src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=900&q=85"
+                                alt="Amina Yaseen Digital Marketing"
                             >
                             <div class="work-overlay">
-                                <h4 class="work-title">Short-Form Video Project 3</h4>
+                                <h4 class="work-title">Digital Marketing</h4>
                                 <span class="work-view-btn">View</span>
                             </div>
                         </div>
@@ -784,30 +806,9 @@
                 </div>
 
                 <!-- PROJECT 4 -->
-                <div class="col-md-4 col-sm-6 xs-padding single-item video">
+                <div class="col-md-4 col-sm-6 xs-padding single-item content">
                     <a
-                        href="https://drive.google.com/file/d/1H9WM0HodoLkZwQ4aE3OHZCzBk8WxHH12/view?usp=drivesdk"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="work-box"
-                    >
-                        <div class="work-thumb">
-                            <img
-                                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
-                                alt="Mehak Video Editing Project 4"
-                            >
-                            <div class="work-overlay">
-                                <h4 class="work-title">Video Editing Project 4</h4>
-                                <span class="work-view-btn">View</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- PROJECT 5 -->
-                <div class="col-md-4 col-sm-6 xs-padding single-item video shorts">
-                    <a
-                        href="https://drive.google.com/file/d/1IwPGpmqvccai3xkecFoFENY9Xa2-eAA7/view?usp=drivesdk"
+                        href="https://www.facebook.com/profile.php?id=61560986067352&rdid=DseyM9eyZC2CPPV1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Tim184rQV%2F#"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="work-box"
@@ -815,10 +816,31 @@
                         <div class="work-thumb">
                             <img
                                 src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85"
-                                alt="Mehak Short Form Video Project 5"
+                                alt="Amina Yaseen Content Creation"
                             >
                             <div class="work-overlay">
-                                <h4 class="work-title">Shorts & Reels Project 5</h4>
+                                <h4 class="work-title">Content Creation</h4>
+                                <span class="work-view-btn">View</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- PROJECT 5 -->
+                <div class="col-md-4 col-sm-6 xs-padding single-item design">
+                    <a
+                        href="https://www.instagram.com/aminayaseen_virtualartist?stkn=MWI2b3FwcmI1bmdxZw%3D%3D"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="work-box"
+                    >
+                        <div class="work-thumb">
+                            <img
+                                src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=900&q=85"
+                                alt="Amina Yaseen Visual Content"
+                            >
+                            <div class="work-overlay">
+                                <h4 class="work-title">Visual Content</h4>
                                 <span class="work-view-btn">View</span>
                             </div>
                         </div>
@@ -826,83 +848,20 @@
                 </div>
 
                 <!-- PROJECT 6 -->
-                <div class="col-md-4 col-sm-6 xs-padding single-item video">
+                <div class="col-md-4 col-sm-6 xs-padding single-item marketing">
                     <a
-                        href="https://drive.google.com/file/d/1lYRf4zSqoWFz8CyUrG2Jp8RWVAtwm7QI/view?usp=drivesdk"
+                        href="https://www.facebook.com/profile.php?id=61560986067352&rdid=DseyM9eyZC2CPPV1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Tim184rQV%2F#"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="work-box"
                     >
                         <div class="work-thumb">
                             <img
-                                src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=900&q=85"
-                                alt="Mehak Video Editing Project 6"
+                                src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=900&q=85"
+                                alt="Amina Yaseen Digital Content"
                             >
                             <div class="work-overlay">
-                                <h4 class="work-title">Video Editing Project 6</h4>
-                                <span class="work-view-btn">View</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- AI PROJECT 1 -->
-                <div class="col-md-4 col-sm-6 xs-padding single-item ai video">
-                    <a
-                        href="https://drive.google.com/file/d/19Eg4czM5zgNKLdlygP1VP6GuMAkQEqLy/view?usp=drivesdk"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="work-box"
-                    >
-                        <div class="work-thumb">
-                            <img
-                                src="https://images.unsplash.com/photo-1626379953822-baec19c3accd?auto=format&fit=crop&w=900&q=85"
-                                alt="Mehak AI Generated Video Project 1"
-                            >
-                            <div class="work-overlay">
-                                <h4 class="work-title">AI Generated Project 1</h4>
-                                <span class="work-view-btn">View</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- AI PROJECT 2 -->
-                <div class="col-md-4 col-sm-6 xs-padding single-item ai video">
-                    <a
-                        href="https://drive.google.com/file/d/1n8aF1aUaFrwK_J_XhTRNuXxfIz0OY-at/view?usp=drivesdk"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="work-box"
-                    >
-                        <div class="work-thumb">
-                            <img
-                                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85"
-                                alt="Mehak AI Generated Video Project 2"
-                            >
-                            <div class="work-overlay">
-                                <h4 class="work-title">AI Generated Project 2</h4>
-                                <span class="work-view-btn">View</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- AI PROJECT 3 -->
-                <div class="col-md-4 col-sm-6 xs-padding single-item ai video">
-                    <a
-                        href="https://drive.google.com/file/d/1coqo9IOB3JWNFUFeK9BSY7RrcuFFPaWF/view?usp=drivesdk"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="work-box"
-                    >
-                        <div class="work-thumb">
-                            <img
-                                src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=900&q=85"
-                                alt="Mehak AI Generated Video Project 3"
-                            >
-                            <div class="work-overlay">
-                                <h4 class="work-title">AI Generated Project 3</h4>
+                                <h4 class="work-title">Digital Content</h4>
                                 <span class="work-view-btn">View</span>
                             </div>
                         </div>
@@ -913,255 +872,330 @@
         </div>
     </div>
 </section>
+
 <!-- END PORTFOLIO -->
 
 
-    <!-- EXPERIENCE -->
-    <section
-        id="reviews"
-        class="testimonial-section bg-grey bd-bottom padding"
-    >
+<!-- EXPERIENCE -->
 
-        <div class="container">
+<section
+    id="reviews"
+    class="testimonial-section bg-grey bd-bottom padding"
+>
 
-            <div class="row">
+    <div class="container">
 
-                <div class="col-md-6 d-none d-lg-block d-md-block">
-                    <div class="clients-thumb">
-                        <div class="ct-thumb thumb-1"></div>
-                        <div class="ct-thumb thumb-2"></div>
-                        <div class="ct-thumb thumb-3"></div>
-                        <div class="ct-thumb thumb-4"></div>
-                        <div class="ct-thumb thumb-5"></div>
-                    </div>
+        <div class="row">
+
+            <div class="col-md-6 d-none d-lg-block d-md-block">
+                <div class="clients-thumb">
+                    <div class="ct-thumb thumb-1"></div>
+                    <div class="ct-thumb thumb-2"></div>
+                    <div class="ct-thumb thumb-3"></div>
+                    <div class="ct-thumb thumb-4"></div>
+                    <div class="ct-thumb thumb-5"></div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="section-heading">
+                    <h2 class="wow fadeInUp" data-wow-delay="100ms">
+                        Education & Experience
+                    </h2>
                 </div>
 
-                <div class="col-md-6">
+                <div
+                    id="testimonial-carousel"
+                    class="testimonial-carousel owl-carousel wow fadeInUp"
+                    data-wow-delay="300ms"
+                >
 
-                    <div class="section-heading">
-                        <h2 class="wow fadeInUp" data-wow-delay="100ms">
-                            Education & Experience
-                        </h2>
-                    </div>
+                    <div class="testi-item">
 
-                    <div id="testimonial-carousel" class="testimonial-carousel owl-carousel wow fadeInUp" data-wow-delay="300ms">
+                        <p>
+                            Currently pursuing BS Physics and have completed the 4th semester at Government Graduate College Jaranwala, affiliated with GC University Faisalabad.
+                        </p>
 
-                        <div class="testi-item">
-                            <p>Currently enrolled in Robotics & Artificial Intelligence, building knowledge in technology and computer-based fields.</p>
-                            <div class="testi-thumb">
-                                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=300&q=80" alt="Robotics and Artificial Intelligence">
-                                <h3>Robotics & Artificial Intelligence <span>Currently Enrolled</span></h3>
-                            </div>
-                        </div>
+                        <div class="testi-thumb">
 
-                        <div class="testi-item">
-                            <p>Completed Intermediate in Faculty of Science with Grade A in 2025.</p>
-                            <div class="testi-thumb">
-                                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=300&q=80" alt="Intermediate Education">
-                                <h3>Intermediate (F.Sc) <span>The Scholars Science College Taxila | 2025 | Grade A</span></h3>
-                            </div>
-                        </div>
+                            <img
+                                src="https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?auto=format&fit=crop&w=300&q=80"
+                                alt="BS Physics"
+                            >
 
-                        <div class="testi-item">
-                            <p>Completed Matriculation in Science with Grade A+ in 2023.</p>
-                            <div class="testi-thumb">
-                                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=300&q=80" alt="Science Education">
-                                <h3>Matriculation (Science) <span>F.G No. 1 Girls HIT Taxila Cantt | 2023 | Grade A+</span></h3>
-                            </div>
-                        </div>
+                            <h3>
+                                BS Physics
+                                <span>
+                                    4th Semester Completed | Ongoing
+                                </span>
+                            </h3>
 
-                        <div class="testi-item">
-                            <p>Assisted teachers in entering and organizing student academic records, maintained accurate data and digital files, and supported administrative and computer-based tasks when required.</p>
-                            <div class="testi-thumb">
-                                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=300&q=80" alt="Data Entry and Record Management">
-                                <h3>Data Entry & Record Management <span>Academic & Administrative Support</span></h3>
-                            </div>
                         </div>
 
                     </div>
+
+
+                    <div class="testi-item">
+
+                        <p>
+                            Completed F.Sc Pre-Medical as part of academic education under the Board of Intermediate & Secondary Education.
+                        </p>
+
+                        <div class="testi-thumb">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1532619187608-e5375cab36ca?auto=format&fit=crop&w=300&q=80"
+                                alt="FSc Pre-Medical"
+                            >
+
+                            <h3>
+                                F.Sc Pre-Medical
+                                <span>
+                                    Board of Intermediate & Secondary Education
+                                </span>
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="testi-item">
+
+                        <p>
+                            Completed a two-month remote internship at Sehattnama Platform, contributing to digital content, graphic design, web research and audience engagement.
+                        </p>
+
+                        <div class="testi-thumb">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=300&q=80"
+                                alt="Sehattnama Platform Internship"
+                            >
+
+                            <h3>
+                                Digital Content & Graphic Design Intern
+                                <span>
+                                    Sehattnama Platform | Remote | 2 Months
+                                </span>
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="testi-item">
+
+                        <p>
+                            Worked independently as a motivational speaker and content writer for 1.5 years, delivering talks and creating motivational scripts, Urdu content and creative prose.
+                        </p>
+
+                        <div class="testi-thumb">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=300&q=80"
+                                alt="Motivational Speaker and Content Writer"
+                            >
+
+                            <h3>
+                                Motivational Speaker & Content Writer
+                                <span>
+                                    Independent / Freelance | 1.5 Years
+                                </span>
+                            </h3>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
+
         </div>
-    </section>
-    <!-- END EXPERIENCE -->
+
+    </div>
+
+</section>
+
+<!-- END EXPERIENCE -->
 
 
-    <!-- CONTACT -->
+<!-- CONTACT -->
 
-    <section
-        id="contact"
-        class="contact-section padding"
-    >
+<section
+    id="contact"
+    class="contact-section padding"
+>
 
-        <div class="container">
+    <div class="container">
 
-            <div class="contact-wrapper d-flex align-items-center row">
+        <div class="contact-wrapper d-flex align-items-center row">
 
-                <div class="col-lg-5 col-md-6 sm-padding">
+            <div class="col-lg-5 col-md-6 sm-padding">
 
-                    <div class="contact-info">
+                <div class="contact-info">
 
-                        <div class="section-heading mb-20">
+                    <div class="section-heading mb-20">
 
-                            <h2
-                                class="wow fadeInUp"
-                                data-wow-delay="100ms"
-                            >
-                                Get In Touch
-                            </h2>
-
-                        </div>
-
-
-                        <p
+                        <h2
                             class="wow fadeInUp"
-                            data-wow-delay="300ms"
+                            data-wow-delay="100ms"
                         >
-                            Have a graphic design, email design, social media, advertising or video editing
-                            project? Let's discuss how Shireen can bring your creative ideas to life.
-                        </p>
+                            Get In Touch
+                        </h2>
+
+                    </div>
 
 
-                        <p
-                            class="wow fadeInUp"
-                            data-wow-delay="400ms"
-                        >
-
-                            <strong>Email:</strong>
-
-                            <a href="mailto:mekiimehak776@gmail.com">
-                                mekiimehak776@gmail.com
-                            </a>
-
-                            <br>
-
-                            <strong>Phone:</strong>
-
-                            <a href="tel:+923359166080">
-                                +92 335 9166080
-                            </a>
-
-                            <br>
-
-                            <strong>Location:</strong>
-
-                            Ghulshan Abu Talib, Taxila, Pakistan
-
-                        </p>
+                    <p
+                        class="wow fadeInUp"
+                        data-wow-delay="300ms"
+                    >
+                        Have a content creation, digital marketing, graphic design, creative writing or communication project? Let's discuss how Amina can bring creative ideas and engaging digital content to life.
+                    </p>
 
 
-                        <p
-                            class="wow fadeInUp"
+                    <p
+                        class="wow fadeInUp"
+                        data-wow-delay="400ms"
+                    >
+
+                        <strong>Email:</strong>
+
+                        <a href="mailto:aminayaseenaminayasæn128@gmail.com">
+                            aminayaseenaminayasæn128@gmail.com
+                        </a>
+
+                        <br>
+
+                        <strong>Phone:</strong>
+
+                        <a href="tel:+923299835628">
+                            +92 329 9835628
+                        </a>
+
+                        <br>
+
+                        <strong>Location:</strong>
+
+                        Jaranwala, Pakistan
+
+                    </p>
+
+
+                    <p
+                        class="wow fadeInUp"
+                        data-wow-delay="500ms"
+                    >
+
+                        <strong>Specialization:</strong>
+                        Content Creation • Digital Marketing • Graphic Design • Creative Writing • Public Speaking
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-7 col-md-6 sm-padding">
+
+                <div class="contact-form">
+
+                    <form
+                        action="contact.php"
+                        method="post"
+                        id="ajax_form"
+                        class="form-horizontal"
+                    >
+
+                        <div
+                            class="form-group colum-row row wow fadeInUp"
                             data-wow-delay="500ms"
                         >
 
-                            <strong>Specialization:</strong> Video Editing • Shorts & Reels • Social Media Content • AI-Assisted Editing
+                            <div class="col-sm-6">
 
-                        </p>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="form-control"
+                                    placeholder="Full Name"
+                                    required
+                                >
 
-                    </div>
-
-                </div>
+                            </div>
 
 
-                <div class="col-lg-7 col-md-6 sm-padding">
+                            <div class="col-sm-6">
 
-                    <div class="contact-form">
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="Email"
+                                    required
+                                >
 
-                        <form
-                            action="contact.php"
-                            method="post"
-                            id="ajax_form"
-                            class="form-horizontal"
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="form-group row wow fadeInUp"
+                            data-wow-delay="700ms"
                         >
 
-                            <div
-                                class="form-group colum-row row wow fadeInUp"
-                                data-wow-delay="500ms"
-                            >
+                            <div class="col-md-12">
 
-                                <div class="col-sm-6">
-
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        class="form-control"
-                                        placeholder="Full Name"
-                                        required
-                                    >
-
-                                </div>
-
-
-                                <div class="col-sm-6">
-
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        class="form-control"
-                                        placeholder="Email"
-                                        required
-                                    >
-
-                                </div>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    cols="30"
+                                    rows="5"
+                                    class="form-control message"
+                                    placeholder="Message"
+                                    required
+                                ></textarea>
 
                             </div>
 
+                        </div>
 
-                            <div
-                                class="form-group row wow fadeInUp"
-                                data-wow-delay="700ms"
-                            >
 
-                                <div class="col-md-12">
+                        <div
+                            class="form-group row wow fadeInUp"
+                            data-wow-delay="900ms"
+                        >
 
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        cols="30"
-                                        rows="5"
-                                        class="form-control message"
-                                        placeholder="Message"
-                                        required
-                                    ></textarea>
+                            <div class="col-md-12">
 
-                                </div>
+                                <button
+                                    id="submit"
+                                    class="default-btn"
+                                    type="submit"
+                                >
+                                    Send Message
+                                </button>
 
                             </div>
 
-
-                            <div
-                                class="form-group row wow fadeInUp"
-                                data-wow-delay="900ms"
-                            >
-
-                                <div class="col-md-12">
-
-                                    <button
-                                        id="submit"
-                                        class="default-btn"
-                                        type="submit"
-                                    >
-                                        Send Message
-                                    </button>
-
-                                </div>
-
-                            </div>
+                        </div>
 
 
-                            <div
-                                id="form-messages"
-                                class="alert"
-                                role="alert"
-                            ></div>
+                        <div
+                            id="form-messages"
+                            class="alert"
+                            role="alert"
+                        ></div>
 
-                        </form>
-
-                    </div>
+                    </form>
 
                 </div>
 
@@ -1169,225 +1203,233 @@
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- END CONTACT -->
+</section>
 
-
-    <!-- GET TO WORK -->
-
-    <section class="widget-section padding">
-
-        <div class="container">
-
-            <div class="widget-content text-center">
-
-                <h2
-                    class="wow fadeInUp"
-                    data-wow-delay="100ms"
-                >
-                    Let's get to work
-                    <span>!</span>
-                </h2>
+<!-- END CONTACT -->
 
 
-                <a
-                    class="mb-15 wow fadeInUp"
-                    data-wow-delay="200ms"
-                    href="mailto:mekiimehak776@gmail.com"
-                >
-                    mekiimehak776@gmail.com
-                </a>
+<!-- GET TO WORK -->
+
+<section class="widget-section padding">
+
+    <div class="container">
+
+        <div class="widget-content text-center">
+
+            <h2
+                class="wow fadeInUp"
+                data-wow-delay="100ms"
+            >
+                Let's get to work
+                <span>!</span>
+            </h2>
 
 
-                <a
-                    href="tel:+923359166080"
-                    class="wow fadeInUp"
-                    data-wow-delay="300ms"
-                >
-                    +92 335 9166080
-                </a>
+            <a
+                class="mb-15 wow fadeInUp"
+                data-wow-delay="200ms"
+                href="mailto:aminayaseenaminayasæn128@gmail.com"
+            >
+                aminayaseenaminayasæn128@gmail.com
+            </a>
+
+            
+
+
+            <a
+                href="tel:+923299835628"
+                class="wow fadeInUp"
+                data-wow-delay="300ms"
+            >
+                +92 329 9835628
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END GET TO WORK -->
+
+
+<!-- FOOTER -->
+
+<footer class="footer-section">
+
+    <div class="container">
+
+        <div class="footer-wrap row">
+
+            <div class="col-md-6">
+
+                <ul class="footer-social">
+
+                    <li>
+                        <a
+                            href="https://www.instagram.com/aminayaseen_virtualartist?stkn=MWI2b3FwcmI1bmdxZw%3D%3D"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.facebook.com/profile.php?id=61560986067352&rdid=DseyM9eyZC2CPPV1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Tim184rQV%2F#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Facebook
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/aminayaseen345698?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="mailto:aminayaseenaminayasæn128@gmail.com"
+                        >
+                            Email
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="copyright">
+
+                    <p>
+
+                        &copy;
+
+                        <span id="year"></span>
+
+                        Amina Yaseen. All Rights Reserved.
+
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- END GET TO WORK -->
+</footer>
 
+<!-- END FOOTER -->
 
-    <!-- FOOTER -->
 
-    <footer class="footer-section">
+<!-- SCROLL TO TOP -->
 
-        <div class="container">
+<a
+    data-scroll
+    href="#header"
+    id="scroll-to-top"
+>
 
-            <div class="footer-wrap row">
+    <i class="ti-angle-up"></i>
 
-                <div class="col-md-6">
+</a>
 
-                    <ul class="footer-social">
 
-                        
+<!-- jQuery -->
 
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
 
-                        <li>
-                            <a href="https://drive.google.com/file/d/1RMcen4qjH20YsA-uAhsNu-yaMfINua1b/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/mehak_mekiii?stkn=MWd3NW5tdmFqMDBpeQ==" target="_blank" rel="noopener noreferrer">
-                                Instagram
-                            </a>
-                        </li>
-                          <li>
-                            <a href="https://www.linkedin.com/in/mehak-mekii-a07627331?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">
-                                LinkedIn
-                            </a>
-                        </li>
+<!-- Modernizr -->
 
+<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
+<!-- Bootstrap -->
 
+<script src="js/vendor/bootstrap.min.js"></script>
 
-                        <li>
+<!-- Slicknav -->
 
-                            <a
-                                href="mailto:mekiimehak776@gmail.com"
-                            >
-                                Email
-                            </a>
+<script src="js/vendor/jquery.slicknav.min.js"></script>
 
-                        </li>
+<!-- OWL Carousel -->
 
+<script src="js/vendor/owl.carousel.min.js"></script>
 
-                        
+<!-- Counterup -->
 
-                    </ul>
+<script src="js/vendor/jquery.counterup.min.js"></script>
 
-                </div>
+<!-- Waypoints -->
 
+<script src="js/vendor/jquery.waypoints.v2.0.3.min.js"></script>
 
-                <div class="col-md-6">
+<!-- Venobox -->
 
-                    <div class="copyright">
+<script src="js/vendor/venobox.min.js"></script>
 
-                        <p>
+<!-- Images Loaded -->
 
-                            &copy;
+<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
 
-                            <span id="year"></span>
+<!-- Isotope -->
 
-                            Syeda Mehak Nahlain Fatima. All Rights Reserved.
+<script src="js/vendor/jquery.isotope.v3.0.2.js"></script>
 
-                        </p>
+<!-- Smooth Scroll -->
 
-                    </div>
+<script src="js/vendor/smooth-scroll.min.js"></script>
 
-                </div>
+<!-- WOW -->
 
-            </div>
+<script src="js/vendor/wow.min.js"></script>
 
-        </div>
+<!-- Contact -->
 
-    </footer>
+<script src="js/contact.js"></script>
 
-    <!-- END FOOTER -->
+<!-- Main JS -->
 
+<script src="js/main.js"></script>
 
-    <!-- SCROLL TO TOP -->
 
-    <a
-        data-scroll
-        href="#header"
-        id="scroll-to-top"
-    >
+<!-- CURRENT YEAR -->
 
-        <i class="ti-angle-up"></i>
+<script>
 
-    </a>
+    document.addEventListener(
+        "DOMContentLoaded",
+        function () {
 
+            var yearElement =
+                document.getElementById("year");
 
-    <!-- jQuery -->
+            if (yearElement) {
 
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-
-    <!-- Modernizr -->
-
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-
-    <!-- Bootstrap -->
-
-    <script src="js/vendor/bootstrap.min.js"></script>
-
-    <!-- Slicknav -->
-
-    <script src="js/vendor/jquery.slicknav.min.js"></script>
-
-    <!-- OWL Carousel -->
-
-    <script src="js/vendor/owl.carousel.min.js"></script>
-
-    <!-- Counterup -->
-
-    <script src="js/vendor/jquery.counterup.min.js"></script>
-
-    <!-- Waypoints -->
-
-    <script src="js/vendor/jquery.waypoints.v2.0.3.min.js"></script>
-
-    <!-- Venobox -->
-
-    <script src="js/vendor/venobox.min.js"></script>
-
-    <!-- Images Loaded -->
-
-    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
-
-    <!-- Isotope -->
-
-    <script src="js/vendor/jquery.isotope.v3.0.2.js"></script>
-
-    <!-- Smooth Scroll -->
-
-    <script src="js/vendor/smooth-scroll.min.js"></script>
-
-    <!-- WOW -->
-
-    <script src="js/vendor/wow.min.js"></script>
-
-    <!-- Contact -->
-
-    <script src="js/contact.js"></script>
-
-    <!-- Main JS -->
-
-    <script src="js/main.js"></script>
-
-
-    <!-- CURRENT YEAR -->
-
-    <script>
-
-        document.addEventListener(
-            "DOMContentLoaded",
-            function () {
-
-                var yearElement =
-                    document.getElementById("year");
-
-                if (yearElement) {
-
-                    yearElement.textContent =
-                        new Date().getFullYear();
-
-                }
+                yearElement.textContent =
+                    new Date().getFullYear();
 
             }
-        );
 
-    </script>
+        }
+    );
+
+</script>
 
 
 </body>
